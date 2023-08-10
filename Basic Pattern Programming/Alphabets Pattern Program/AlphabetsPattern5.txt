@@ -1,0 +1,23 @@
+package NumberBasedProgram;
+
+public class AlphabetsPattern5 {
+
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=i;j--) {
+				System.out.print((char)(96+j)+" ");//Lowecase a ASCII Value=97 
+												// always see start and last point of a pattern
+			}
+			System.out.println();
+		}
+	}
+}
+/*
+Output=
+e 
+e d 
+e d c 
+e d c b 
+e d c b a 
+*/

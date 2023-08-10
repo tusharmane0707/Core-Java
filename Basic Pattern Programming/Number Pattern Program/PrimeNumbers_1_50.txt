@@ -1,0 +1,38 @@
+package NumberBasedProgram;
+
+public class PrimeNumbers_1_50 {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=50;i++) {
+			int count=0;
+			for(int j=1;j<=i;j++) {
+				if(i%j==0) {
+					count++;
+				}
+			}
+			if(count==2) {
+				System.out.println(i + " is a Prime Number");
+			}
+		}
+
+	}
+
+}
+/*
+OUTPUT=
+2 is a Prime Number
+3 is a Prime Number
+5 is a Prime Number
+7 is a Prime Number
+11 is a Prime Number
+13 is a Prime Number
+17 is a Prime Number
+19 is a Prime Number
+23 is a Prime Number
+29 is a Prime Number
+31 is a Prime Number
+37 is a Prime Number
+41 is a Prime Number
+43 is a Prime Number
+47 is a Prime Number
+*/
