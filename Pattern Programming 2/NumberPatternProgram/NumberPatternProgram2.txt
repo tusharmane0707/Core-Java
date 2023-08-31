@@ -1,0 +1,26 @@
+package Pattern_Programming_2;
+
+public class NumberPatternProgram2 {
+
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {	// start 5 
+			for(int s=1;s<=i-1;s++) {	// for spacing
+				System.out.print(" ");
+			}
+			for(int j=n;j>=i;j--) {	// for printing j
+				System.out.print(j);
+			}
+			System.out.println();
+			
+		}
+	}
+
+}
+/*
+    5
+   54
+  543
+ 5432
+54321
+*/

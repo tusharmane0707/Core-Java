@@ -1,0 +1,26 @@
+package Pattern_Programming_2;
+
+public class NumberPatternProgram4 {
+
+	public static void main(String[] args) {
+		int n=5;
+		int k=1; 	// take a 3rd variable for increment
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=k;j--) {
+				System.out.print(j);
+			}
+			k++;	// k increment 
+			System.out.println();
+		}
+
+	}
+
+}
+/*
+Output=
+54321
+5432
+543
+54
+5
+*/

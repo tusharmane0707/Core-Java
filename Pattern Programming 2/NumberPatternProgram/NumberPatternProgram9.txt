@@ -1,0 +1,37 @@
+package Pattern_Programming_2;
+
+public class NumberPatternProgram9 {
+
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;	// starting point
+		int sp=n/2; 	// space
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print(i%2);
+			}
+			if(i<=n/2) {	//i<=3
+				st=st+2;
+				sp--;
+			}
+			else {
+				st=st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+}
+/*
+Output=
+   1
+  000
+ 11111
+0000000
+ 11111
+  000
+   1
+*/
